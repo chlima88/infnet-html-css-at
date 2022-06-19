@@ -120,7 +120,7 @@ main > section:not(#inicio) {
 }
 
 #inicio {
-  background-image: url("/imagens/plenario-camara.png");
+  background-image: url("./imagens/plenario-camara.png");
   background-size: cover;
   background-position: center;
   color: var(--color1);
@@ -387,7 +387,7 @@ footer {
     display: grid;
     grid-gap: 10px;
     /* grid-template-columns: repeat(auto-fill, calc(var(--global-width)/4.2)); */
-    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fill, 2fr);
     justify-content: space-between;
     margin-top: 4rem;
     max-width: var(--global-width);
