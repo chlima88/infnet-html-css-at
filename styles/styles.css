@@ -1,0 +1,396 @@
+html {
+  font-size: 62.5%;
+
+  --color1: #ffffff;
+  --color2: #103344;
+  --color3: #222222;
+  --color4: #b1b1b1;
+  --color5: #f0f0f0;
+  --color6: #00a030;
+
+  --global-width: 96rem;
+
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+button {
+  background-color: var(--color2);
+  border: 0;
+  border-radius: 5px;
+  color: var(--color1);
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5em; 
+  padding: 0.7em;
+}
+
+input,
+textarea {
+  border: 1px solid var(--color4);
+  border-radius: 5px;
+  padding: 0.7em;
+}
+
+
+/* Header */
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color2);
+  color: var(--color1);
+  padding: 0.5rem 0;
+}
+
+
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  /* width: var(--global-width); */
+  padding-inline: 100px;
+}
+
+.header-box__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-box__logo p {
+  font-weight: bold;
+}
+
+.header-box__img-container {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.menu__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu__item {
+  margin: 0 0.5em;
+}
+
+.menu__link,
+.menu__link:visited {
+  font-size: 0.9em;
+  color: var(--color1);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Main */
+
+#deputados,
+#partidos,
+#bancadas,
+#noticias,
+#plenaria,
+#contato  {
+  padding-top: 10rem;
+}
+
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main > section:not(#inicio) {
+  width: var(--global-width);
+  margin: 0 auto;
+}
+
+#inicio {
+  background-image: url("/imagens/plenario-camara.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--color1);
+  height: 100vh;
+  width: 100vw;
+}
+
+#inicio div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  text-shadow: 3px 3px #000000;
+  
+  background-position: center;
+  background-size: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+#inicio div h1 {
+  font-size: 3.5em;
+  margin-block: 1rem;
+}
+
+#inicio div h2 {
+  margin-block: 1rem;
+}
+
+#inicio button {
+  margin-top: 2rem;
+  padding: 2.5rem 5rem;
+  border-radius: 1rem;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__title {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  color: var(--color2);
+  margin-bottom: 1.5em;
+}
+
+.search-box__title{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.search-box__form {
+  display: flex;
+  flex-direction: column;
+  width: 45rem;
+}
+
+.search-box__button {
+  padding: 0.7em;
+  margin-top: 0.5em;
+}
+
+/* .cardgrid {
+  display: flex;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  flex: 0 0 25%;
+  gap: 10px;
+  justify-content: center;
+} */
+
+.cardgrid {
+  display: grid;
+  grid-gap: 10px;
+  /* grid-template-columns: repeat(auto-fill, calc(var(--global-width)/4.2)); */
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  margin-top: 4rem;
+  width: var(--global-width);
+  margin-inline: auto;
+}
+
+.card {
+  border: 1px solid var(--color5);
+  /* width: 200px; */
+}
+
+/* .card__img-container {
+  width: 200px;
+} */
+
+.card__image {
+  width: 100%;
+  height: 100%;
+}
+
+.card__text-container p {
+  margin-block: 0.5em;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.card__list {
+  padding-inline: 2em 1.5em;
+}
+.card__list-item {
+  margin: 0.7em 0;
+  /* font-size: 0.8em; */
+}
+
+
+.party-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.party-card__img-container {
+  height: 18rem;
+}
+
+.party-card__logo {
+  height: 100%;
+  width: 100%;
+}
+
+.party-card p {
+  font-weight: 700;
+}
+
+.party-card__icon-container {
+  display: inline;
+}
+
+.bench-table {
+	border-collapse: collapse;
+	border-spacing: 0;
+  border: 1px solid var(--color5);
+  /* font-size: 20px; */
+}
+
+.bench-table thead {
+  background-color: var(--color2);
+  color: var(--color1);  
+}
+
+.bench-table th{
+  border: 1px solid var(--color5);
+  padding: 0.9em 1.5rem;
+  text-align: left;
+}
+
+.bench-table td {
+  border: 1px solid var(--color5);
+  padding: 0.9em 1.5rem;
+}
+
+#bancadas > a {
+  margin-top: 1.5em;
+}
+
+.news { 
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 96rem;
+}
+
+.news__img-container {
+  width: 50%;
+}
+
+.news__image {
+  width: 100%;
+  height: 100%;
+}
+
+.news__text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
+}
+
+.news__header {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.news__text {
+  text-align: justify;
+}
+
+.news__button {  
+  padding: 0.7em;
+  margin-top: 0.5em;
+  text-decoration: underline;
+  width: 100%;
+}
+
+#plenaria iframe {
+  border: 0;
+  height: 54rem;
+  width: 96rem;
+}
+
+.contact {
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+  margin-bottom: 10rem;
+}
+
+.contact__form-container {
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem
+}
+
+.contact__text-area {
+  height: 15rem;
+}
+
+.contact__list {
+  list-style-type: circle;
+  line-height: 2em;
+  padding-left: 1.5em;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: var(--color2);
+  color: var(--color1);
+  height: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__gotop-link {
+  color: var(--color6);
+  position: fixed;
+  bottom: 0.5rem;
+  right: 1rem;
+  font-size: 4rem;
+}
+
+@media (max-width: 960px) {
+  root {
+    --global-width: 95vw;
+  }
+
+  .cardgrid {
+    display: grid;
+    grid-gap: 10px;
+    /* grid-template-columns: repeat(auto-fill, calc(var(--global-width)/4.2)); */
+    grid-template-columns: repeat(auto-fill, 1fr);
+    justify-content: space-between;
+    margin-top: 4rem;
+    max-width: var(--global-width);
+    margin-inline: auto;
+  }
+}
