@@ -18,19 +18,20 @@
     <div class="header-box">
       <div class="header-box__logo">
         <div class="header-box__img-container">
-          <img class="header-box__logo-img" src="./imagens/logo.png" alt="Logo">
+          <img class="header-box__logo-img" src="./imagens/logo.png" alt="Logotipo Dados Abertos">
         </div>
         <p class="header-box__logo-text">dados abertos</p>
       </div>
       <nav class="menu">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#inicio">Início</a></li>
-          <li class="menu__item"><a class="menu__link" href="#deputados">Deputados</a></li>
-          <li class="menu__item"><a class="menu__link" href="#partidos">Partidos</a></li>
-          <li class="menu__item"><a class="menu__link" href="#bancadas">Bancadas</a></li>
-          <li class="menu__item"><a class="menu__link" href="#noticias">Notícias</a></li>
-          <li class="menu__item"><a class="menu__link" href="#plenaria">Plenária</a></li>
-          <li class="menu__item"><a class="menu__link" href="#contato">Contato</a></li>
+          <li class="menu__item"><a class="menu__link" href="#inicio" title="Inicio">Início</a></li>
+          <li class="menu__item"><a class="menu__link" href="#deputados" title="Lista de Deputados">Deputados</a></li>
+          <li class="menu__item"><a class="menu__link" href="#partidos" title="Lista de Partidos">Partidos</a></li>
+          <li class="menu__item"><a class="menu__link" href="#bancadas" title="Tabela de Bancadas">Bancadas</a></li>
+          <li class="menu__item"><a class="menu__link" href="#noticias" title="Ultimas Noticias">Notícias</a></li>
+          <li class="menu__item"><a class="menu__link" href="#plenaria" title="Plenária ao Vivo">Plenária</a></li>
+          <li class="menu__item"><a class="menu__link" href="#contato" title="Contato">Contato</a></li>
+          <li class="menu__item"><a class="menu__link" href="./assessment.html" title="Assessment">Assessment</a></li>
         </ul>
       </nav>
     </div>
@@ -47,8 +48,8 @@
     <section id="deputados">
       <h1 class="section__title">DEPUTADOS</h1>
       <div class="search-box">
-        <p class="search-box__title">Consule aqui os deputados da legislatura atual</p>
         <form class="search-box__form">
+          <p class="search-box__title">Consule aqui os deputados da legislatura atual</p>
           <input class="search-box__input" type="text" placeholder="Nome do deputado">
           <button class="search-box__button" type="submit">BUSCAR</button>
         </form>
@@ -163,8 +164,8 @@
     <section id="partidos">
       <h1 class="section__title">PARTIDOS</h1>
       <div class="search-box">
-        <p class="search-box__title">Consulte aqui os partidos existentes</p>
         <form class="search-box__form">
+          <p class="search-box__title">Consulte aqui os partidos existentes</p>
           <input class="search-box__input" type="text" placeholder="Nome do partido">
           <button class="search-box__button" type="submit">BUSCAR</button>
         </form>
@@ -240,7 +241,7 @@
         </div>
       </div>
     </section>
-    <!-- <section id="bancadas">
+    <section id="bancadas">
       <h1 class="section__title">BANCADAS</h1>
       <h2 class="section__subtitle">Principais bancadas do congresso</h2>
       <table class="bench-table">
@@ -304,7 +305,7 @@
         </tfoot>
       </table>
       <a href="#">Acesse a lista completa de bancadas</a>
-    </section> -->
+    </section>
     <section id="noticias">
       <h1 class="section__title">NOTÍCIAS</h1>
       <div class="news">
@@ -342,15 +343,19 @@
           </form>
         </div>
         <div class="contact__text-container">
-          <h2>Fale Conosco</h2>
-          <p>Deixe-nos suas críticas, elogios e sugestões</p>
-          <h2>Destaques</h2>
-          <ul class="contact__list">
-            <li><a href="#">Perguntas Frequentes</a></li>
-            <li><a href="#">Acesso à informação</a></li>
-            <li><a href="#">Transparência na Câmara</a></li>
-            <li><a href="#">Carta de serviços ao cidadão</a></li>
-          </ul>
+          <div class="contact__text1">
+            <h2>Fale Conosco</h2>
+            <p>Deixe-nos suas críticas, elogios e sugestões</p>
+          </div>
+          <div class="contact__text2">  
+            <h2>Destaques</h2>
+            <ul class="contact__list">
+              <li><a href="#">Perguntas Frequentes</a></li>
+              <li><a href="#">Acesso à informação</a></li>
+              <li><a href="#">Transparência na Câmara</a></li>
+              <li><a href="#">Carta de serviços ao cidadão</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -358,7 +363,7 @@
 
   <footer >
       <p>© Instituto Infnet - Assessment Interfaces com HTML e CSS</p>
-      <a class="footer__gotop-link" href="#inicio"><i class="fa-solid fa-circle-chevron-up"></i></a>
+      <a class="footer__gotop-link" href="#inicio" title="Voltar ao topo"><i class="fa-solid fa-circle-chevron-up"></i></a>
   </footer>
 
 </body>

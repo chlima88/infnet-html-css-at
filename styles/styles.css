@@ -59,8 +59,8 @@ header {
   align-items: center;
 
   margin: 0 auto;
-  /* width: var(--global-width); */
-  padding-inline: 100px;
+  max-width: var(--global-width);
+  padding-inline: 2rem;
 }
 
 .header-box__logo {
@@ -175,6 +175,7 @@ main > section:not(#inicio) {
 .search-box__title{
   font-weight: bold;
   font-size: 1.2em;
+  text-align: center;
 }
 
 .search-box__form {
@@ -211,9 +212,9 @@ main > section:not(#inicio) {
   width: 200px;
 }
 
-.card__img-container {
+/* .card__img-container {
   width: 200px;
-}
+} */
 
 .card__image {
   width: 100%;
@@ -363,6 +364,7 @@ main > section:not(#inicio) {
 
 .contact__text-area {
   height: 15rem;
+  resize: vertical;
 }
 
 .contact__list {
@@ -382,6 +384,10 @@ footer {
   justify-content: center;
 }
 
+footer p {
+  font-size: 0.7em;
+}
+
 .footer__gotop-link {
   color: var(--color6);
   position: fixed;
@@ -390,15 +396,20 @@ footer {
   font-size: 4rem;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .cardgrid { 
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .bench-table {
+    font-size: 0.7em;
+  }
 }
 
-
-
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 52.9%;
+  }
   .cardgrid { 
     grid-template-columns: repeat(2, 1fr); }
 
@@ -409,8 +420,25 @@ footer {
     width: 100%;
     object-fit: cover;
   }
+}
 
 
+@media screen and (max-width: 667px) {
+  .card { 
+    width: 150px;
+    font-size: 0.8em;
   }
 
+  .contact {
+    flex-direction: column;
+  }
 
+  .contact__form-container {
+    width: 100%;
+  }
+
+  .contact__text-container {
+    display: flex;
+    font-size: 0.8em;
+  }
+}
