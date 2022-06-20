@@ -122,7 +122,7 @@ main > section:not(#inicio) {
 }
 
 #inicio {
-  background-image: url("/imagens/plenario-camara.png");
+  background-image: url("imagens/plenario-camara.png");
   background-size: cover;
   background-position: center;
   color: var(--color1);
