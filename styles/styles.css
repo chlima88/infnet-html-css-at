@@ -416,22 +416,24 @@ footer p {
   }
 
   .menu__list {
-    display: none;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     position: absolute;
-    left: 0;
+    top: 0;
+    right: -100vw;
+    z-index: -2;
     height: 100vh;
-    width: 100vw;
-    padding: 0;
+    width: 50vw;
+    padding-left: 1.5em;
+    padding-top: 4em;
     margin: 0;
     background-color: var(--color2);
-    z-index: -2;
+    transition: right 0.5s ease;
   }
 
   .menu__item {
-    font-size: 2em;
+    font-size: 1.7em;
+    font-weight: 500;
     line-height: 2.2em;
   }
 
@@ -442,7 +444,8 @@ footer p {
   }
 
   .active-component {
-    display: flex;
+    right: 0;
+    transition: right 0.5s ease;
   }
 }
 
