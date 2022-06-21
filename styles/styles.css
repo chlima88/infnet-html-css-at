@@ -37,7 +37,6 @@ textarea {
   padding: 0.7em;
 }
 
-
 /* Header */
 
 header {
@@ -48,10 +47,9 @@ header {
   width: 100%;
   background-color: var(--color2);
   color: var(--color1);
-  padding: 0.5rem 0;
+  padding: 0.5rem 0; 
+  z-index: 1;
 }
-
-
 
 .header-box {
   display: flex;
@@ -79,6 +77,17 @@ header {
   margin-right: 2rem;
 }
 
+.header-box__hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.header-box-box__close {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+}
+
 .menu__list {
   display: flex;
   list-style-type: none;
@@ -96,6 +105,42 @@ header {
   text-transform: uppercase;
 }
 
+.mobile-menu-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  background-color: var(--color2);
+  height: 100vh;
+  width: 100%;
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.mobile-menu__item {
+  margin: 0 0.5em;
+  line-height: 4em;
+}
+
+.mobile-menu__link,
+.mobile-menu__link:visited {
+  font-size: 2em;
+  color: var(--color1);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu a:hover,
+.mobile-menu a:hover {
+  text-decoration: underline;
+}
+
 /* Main */
 
 #deputados,
@@ -107,7 +152,6 @@ header {
   padding-top: 10rem;
   padding-inline: 2rem;
 }
-
 
 main > section {
   display: flex;
@@ -122,13 +166,12 @@ main > section:not(#inicio) {
 }
 
 #inicio {
-  background-image: url("imagens/plenario-camara.png");
+  background-image: url("/imagens/plenario-camara.png");
   background-size: cover;
   background-position: center;
   color: var(--color1);
   height: 100vh;
   width: 100%;
-  
 }
 
 #inicio div {
@@ -200,7 +243,6 @@ main > section:not(#inicio) {
 .cardgrid {
   display: grid;
   grid-gap: 10px;
-  /* grid-template-columns: repeat(auto-fill, calc(var(--global-width)/4.2)); */
   grid-template-columns: repeat(4, 1fr);
   margin-top: 4rem;
   max-width: var(--global-width);
@@ -231,11 +273,10 @@ main > section:not(#inicio) {
 .card__list {
   padding-inline: 2em 1.5em;
 }
+
 .card__list-item {
   margin: 0.7em 0;
-  /* font-size: 0.8em; */
 }
-
 
 .party-card {
   display: flex;
@@ -265,7 +306,6 @@ main > section:not(#inicio) {
 	border-collapse: collapse;
 	border-spacing: 0;
   border: 1px solid var(--color5);
-  /* font-size: 20px; */
 }
 
 .bench-table thead {
@@ -330,7 +370,6 @@ main > section:not(#inicio) {
   overflow: hidden;
   position: relative;
   padding-top: 56.25%;
-  /* height: 54rem; */
   width: 100%;
 }
 
@@ -341,7 +380,6 @@ main > section:not(#inicio) {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
 }
 
 .contact {
@@ -396,6 +434,10 @@ footer p {
   font-size: 4rem;
 }
 
+.disabled-component {
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
   .cardgrid { 
     grid-template-columns: repeat(3, 1fr);
@@ -404,11 +446,22 @@ footer p {
   .bench-table {
     font-size: 0.7em;
   }
+
+  .menu {
+    display: none;
+  }
+
+  .header-box__hamburger {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 52.9%;
+  
+  .bench-table {
+    font-size: 0.6em;
   }
   .cardgrid { 
     grid-template-columns: repeat(2, 1fr); }
