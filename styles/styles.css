@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 
   --color1: #ffffff;
   --color2: #103344;
