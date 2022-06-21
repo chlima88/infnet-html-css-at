@@ -16,18 +16,26 @@ function handleSubmit(event) {
   filterGrid(cardList)
 }
 
-const searchForm = document.querySelectorAll(".search-box__form")
-searchForm.forEach((form) => form.addEventListener("submit", handleSubmit ))
 
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+    document.querySelector(link.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+    });
+  });
+})
 
-
+// Open Close Hamburger Menu
 function TogleMenu() {
   document.querySelector(".menu__list").classList.toggle("active-component")
 }
 
+const searchForm = document.querySelectorAll(".search-box__form")
+searchForm.forEach((form) => form.addEventListener("submit", handleSubmit ))
+
 const openMenuButton = document.querySelector(".header-box__hamburger")
 openMenuButton.addEventListener("click", TogleMenu)
-
 
 const mobileMenuLink = document.querySelectorAll(".menu__link")
 mobileMenuLink.forEach(link => link.addEventListener("click", TogleMenu))
