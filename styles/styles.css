@@ -105,39 +105,8 @@ header {
   text-transform: uppercase;
 }
 
-.mobile-menu-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  background-color: var(--color2);
-  height: 100vh;
-  width: 100%;
-}
 
-.mobile-menu__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  list-style-type: none;
-}
-
-.mobile-menu__item {
-  margin: 0 0.5em;
-  line-height: 4em;
-}
-
-.mobile-menu__link,
-.mobile-menu__link:visited {
-  font-size: 2em;
-  color: var(--color1);
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.menu a:hover,
-.mobile-menu a:hover {
+.menu a:hover{
   text-decoration: underline;
 }
 
@@ -166,7 +135,7 @@ main > section:not(#inicio) {
 }
 
 #inicio {
-  background-image: url("/imagens/plenario-camara.png");
+  background-image: url("../imagens/plenario-camara.png");
   background-size: cover;
   background-position: center;
   color: var(--color1);
@@ -434,11 +403,10 @@ footer p {
   font-size: 4rem;
 }
 
-.disabled-component {
-  display: none;
-}
+
 
 @media screen and (max-width: 900px) {
+
   .cardgrid { 
     grid-template-columns: repeat(3, 1fr);
   }
@@ -447,14 +415,34 @@ footer p {
     font-size: 0.7em;
   }
 
-  .menu {
+  .menu__list {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: var(--color2);
+    z-index: -2;
+  }
+
+  .menu__item {
+    font-size: 2em;
+    line-height: 2.2em;
   }
 
   .header-box__hamburger {
     display: flex;
     align-items: center;
     font-size: 1.5em;
+  }
+
+  .active-component {
+    display: flex;
   }
 }
 
