@@ -8,12 +8,14 @@ html {
   --color4: #b1b1b1;
   --color5: #f0f0f0;
   --color6: #00a030;
+  --color7: #fbfbfb;
 
   --global-width: 96rem;
 
 }
 
 body {
+  background-color: var(--color7);
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -39,6 +41,7 @@ button:hover {
 
 input,
 textarea {
+  background-color: var(--color1);
   border: 1px solid var(--color4);
   border-radius: 5px;
   padding: 0.7em;
@@ -208,14 +211,6 @@ main > section:not(#inicio) {
   margin-top: 0.5em;
 }
 
-/* .cardgrid {
-  display: flex;
-  margin-top: 4rem;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-} */
-
 .cardgrid {
   display: grid;
   grid-gap: 10px;
@@ -226,17 +221,24 @@ main > section:not(#inicio) {
 }
 
 .card {
+  background-color: var(--color1);
   border: 1px solid var(--color5);
   width: 200px;
 }
 
-/* .card__img-container {
-  width: 200px;
-} */
+.card:hover .card__image {
+  transform: scale(1.05);
+}
+
+.card__img-container {
+  display: flex;
+  overflow: hidden;
+}
 
 .card__image {
   width: 100%;
   height: 100%;
+  transition: transform 0.3s ease;
 }
 
 .card__text-container p {
@@ -261,21 +263,30 @@ main > section:not(#inicio) {
   justify-content: space-between;
 }
 
+.party-card:hover .party-card__logo  {
+  transform: scale(1.05);
+}
+
+
 .party-card__img-container {
+  display: flex;
   height: 18rem;
 }
 
 .party-card__logo {
   height: 100%;
   width: 100%;
+  transition: transform 0.3s ease;
 }
 
 .party-card p {
   font-weight: 700;
 }
 
-.party-card__icon-container {
+.party-card__icon-link {
   display: inline;
+  text-decoration: none;
+  color: var(--color2);
 }
 
 .bench-table {
@@ -316,6 +327,12 @@ main > section:not(#inicio) {
 
 .news__image {
   height: 100%;
+  transition: 0.2s;
+}
+
+.news:hover .news__image {
+  transform: scale(0.99);
+  filter: brightness(0.9);
 }
 
 .news__text-container {
@@ -407,6 +424,11 @@ footer p {
   bottom: 0.5rem;
   right: 1rem;
   font-size: 4rem;
+  transition: filter 0.2s;
+}
+
+.footer__gotop-link:hover{
+  filter: brightness(1.2);
 }
 
 
@@ -447,7 +469,6 @@ footer p {
   .menu__item:hover {
     margin-left: 1.5em;
     list-style: square;
-    transition: 0.2s ease;
   }
 
   .header-box__hamburger {
