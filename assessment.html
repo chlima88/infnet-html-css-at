@@ -6,160 +6,184 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assessment</title>
   <link rel="stylesheet" href="./styles/at-styles.css" />
+  <script defer src="fontawesome/js/all.js"></script>
 </head>
 <body>
 
+  <div class="gobackicon">
+    <a href="./index.html"><i class="fa-solid fa-angles-left"></i><span> Voltar</span></a>
+  </div>
+  
+  <div class="parallax">
+    <div class="parallax__layer parallax__layer--background"></div>
+    <div class="parallax__layer parallax__layer--base">
+      <main>
 
-  <main>
 
-    <section>
-      <h1>Assessment</h1>
-      <p>Curso: Engenharia de Software
-      <br> Disciplina: Interfaces com HTML e CSS
-      <br> Prof: Carolina Nardi
-      <br> Aluno: Charles Costa</p>
-    </section>
-    <!-- <p>Seção com título e conteúdo acerca da sua experiencia na disciplina.</p> -->
-
-    <section>
-      <h1>Experiência</h1>
-
-      <p>Detalhe em paragrafos suas dificuldades, facilidades, descobertas e afinidades com o que foi aprendido.</p>
-      <p>Esta seção é livre. Exponha sua opinião, seja criativo(a) sempre</p>
-
-      <p>“kitto katsu” (きっと勝つ) - Vou vencer com certeza</p>
-    </section>
-
-    <!-- <h1>Responsividade e Multimidia</h1>
-
-    <p>Secão com título e conteudo com respostas às seguintes questões sobre Design Responsivo e Multimedia na Web</p> -->
-
-    <section>
-      <h1>Sobre Design Responsivo</h1>
-
-      <ol>
-        <li>
-          <p>Quando é recomendado a criação de um site separado para mobile? Seria este o casa deste site da Câmara dos Deputados?</p>
-          <p>Resposta: A criação de um site separado para mobile é recomendada quando a performance é um requisito fundamental, já que normalmente sites para mobile são bem mais rapidos devido a sua implementação ser mais específica (pouca responsividade) o que torna seus arquivos menores. Pesquisa mostram que sites mobile chegam a ser carregados 60% mais rapido que sites responsivos <span>[<a href="#reference1" title="link para referencia">Ref. 1</a>]</span>. No site que criamos não há essa necessidade devido ao site ser pequeno e o ganho de performance seria ínfimo comparado ao esforço de desenvolvimento.</p>
-        </li>
-        <li>
-          <p>No caso de um CSS específico para impressão (print), como ele deve ser inserido?</p>
-          <p>Resposta: Pode-se criar uma folha de estilos separada e incorporá-la ao HTML adicionando a propriedade <em>media="print"</em> na incorporação. Outra opção é, utilizando folhas de estilos já existentes, adicionar uma media query para o media type <em>print</em> (Ex: @media print {...}).</p>
-        </li>
-      </ol>
-    </section>
-    <section>    
-      <h1>Sobre multimídia Web</h1>
       
-      <ol>
-        <li>
-          <p>O elemento audio permite como elemento-filho o elemento source. Quais são os atributos que o source permite e qual conteúdo eles suportam? Quais os outros atributos do elemento audio e quanto devem ser utilizados?</p>
-          <p>Resposta: Atributos do elemento <em>source</em> <span>[<a href="#reference2" title="link para referencia">Ref. 2</a>]</span>. </p>
-          <table>
-            <tr>
-              <th>Atributo</th>
-              <th>Valor</th>
-              <th>Descrição</th>
-            </tr>
-            <tr>
-              <td>media</td>
-              <td>media query</td>
-              <td>Aceita qualquer media query que poderia ser definido no CSS</td>
-            </tr>
-            <tr>
-              <td>size</td>
-              <td></td>
-              <td>Especifica o tamanho da imagem para diferentes layouts de pagina</td>
-            </tr>
-            <tr>
-              <td>src</td>
-              <td>URL</td>
-              <td>Especifica a URL do arquivo de mídia. Esse atributo é obrigatório quando a tag source é utilizada nas tags video e audio.</td>
-            </tr>
-            <tr>
-              <td>srcset</td>
-              <td>URL</td>
-              <td>Especifica a URL da imagem que será utilizada em diferentes situações. Esse atributo é obrigatório quando a tag source é utilizada nas tags video e audio.</td>
-            </tr>
-            <tr>
-              <td>type</td>
-              <td>MIME-type</td>
-              <td>Especifica o MIME-type do recurso</td>
-            </tr>
-          </table>
-
-          <p>Atributos do elemento audio</p>
-
-          <table></table>
-
-
-        </li>
-        <li>
-          <p>O elemento vídeo permite como elemento-filho o elemento source. Quais são os atributos que o source permite e qual conteúdo eles suportam? Quais os outros atributos do elemento vídeo e quando devem ser utilizados?</p>
-          <p>Resposta: Atributos do elemento <em>source</em> <span>[<a href="#reference2" title="link para referencia">Ref. 2</a>]</span></p>
-
-          <table>
-            <tr>
-              <th>Atributo</th>
-              <th>Valor</th>
-              <th>Descrição</th>
-            </tr>
-            <tr>
-              <td>media</td>
-              <td>media query</td>
-              <td>Aceita qualquer media query que poderia ser definido no CSS</td>
-            </tr>
-            <tr>
-              <td>size</td>
-              <td></td>
-              <td>Especifica o tamanho da imagem para diferentes layouts de pagina</td>
-            </tr>
-            <tr>
-              <td>src</td>
-              <td>URL</td>
-              <td>Especifica a URL do arquivo de mídia. Esse atributo é obrigatório quando a tag source é utilizada nas tags video e audio.</td>
-            </tr>
-            <tr>
-              <td>srcset</td>
-              <td>URL</td>
-              <td>Especifica a URL da imagem que será utilizada em diferentes situações. Esse atributo é obrigatório quando a tag source é utilizada nas tags video e audio.</td>
-            </tr>
-            <tr>
-              <td>type</td>
-              <td>MIME-type</td>
-              <td>Especifica o MIME-type do recurso</td>
-            </tr>
-          </table>
-        </li>
-        <li>
-          <p>No caso do canvas, HTML5 nunca, em momento algum, fez qualquer animação. Isso porque o HTML5 é uma simples linguagem de marcação. Dessa forma, o que é necessário para criar animações com HTML5? O que são APIs do HTML5?</p>
-          <p>Resposta:</p>
-        </li>
-        <li>
-          <p>Como o CSS3 pode ser aplicado na aparência da multimídia HTML5. Demonstre com um exemplo.</p>
-          <p>Resposta:</p>
-        </li>
-      </ol>
-    </section>
+        <section>
+          <h1>Assessment</h1>
+          <p>Curso: Engenharia de Software
+          <br> Disciplina: Interfaces com HTML e CSS
+          <br> Prof: Carolina Nardi
+          <br> Aluno: Charles Costa</p>
+        </section>
+        <!-- <p>Seção com título e conteúdo acerca da sua experiencia na disciplina.</p> -->
     
-    <section>
-      <p>Caso tenha utilizado recursos avançados de animação, inclua uma seção adicional com título e uma breve descrição dos elementos/propriedades utilizadas e quais navegadores não são compativeis com eles. Você pode utilizar o Can I Use como referencia.</p>
+        <section>
+          <h1>Experiência</h1>
+    
+          <p>Detalhe em paragrafos suas dificuldades, facilidades, descobertas e afinidades com o que foi aprendido. Esta seção é livre. Exponha sua opinião, seja criativo(a) sempre.</p>
+    
+          <h2> キットカット “Kitto katsu” (Vou vencer com certeza)</h2>
+          <p>
+            O que essa pequena expressão japonesa (Que está no background da página) diz é exatamente a mentalidade que tive ao encarar essa disciplina. Cheguei aqui com algum conhecimento de HTML e "um nada" de CSS, mas saio com uma enorme bagagem de conhecimento. Não se trata de pensamento positivo ou algum sentimento de superioridade. Essa mensagem significa que com esforço, disciplina e motivação corretamente ajustados, sigo avante!
+          </p>
+          <p>
+            Porque disse isso tudo? Antes das aulas se iniciaram, eu ja observava os diferentes designs pela internet e, em alguns casos, tinha a curiosidade de descobrir como reproduzi-lo. Porém, depois de dois minutos de tutorial, eu desistia pois não ententia como as coisas do CSS se encaixavam. Não memorizava a enorme quantidade de tags e quando chegava no final do codigo, não lembrava mais porque tinha feito certa configuração no começo. O tempo que usei nessa disciplina foi muita pesquisa e foco para entender nos detalhes como tudo se conecta no CSS e no HTML. 
+          </p>
+          <p>Dificuldades - A coisa mais dificil que criei foi justamente a responsividade do menu desse Assessment. Ainda tenho dificuldades para entender o comportamento da <em>margin</em> e <em>padding</em> em algumas situações.</p>
+          <p>Descobertas - Foram muitas! O divisor de águas foi entender como as <em>transitions</em> se comportam de acordo com os diferentes estilos dos seletores. Isso me abriu um leque de opções que me permitiu criar estilos mais parecidos com os que vejo no mercado.</p>
+          <p></p>
+    
+        </section>
+    
+        <!-- <h1>Responsividade e Multimidia</h1>
+    
+        <p>Secão com título e conteudo com respostas às seguintes questões sobre Design Responsivo e Multimedia na Web</p> -->
+    
+        <section>
+          <h1>Sobre Design Responsivo</h1>
+    
+          <ol>
+            <li>
+              <p>Quando é recomendado a criação de um site separado para mobile? Seria este o casa deste site da Câmara dos Deputados?</p>
+              <p>Resposta: A criação de um site separado para mobile é recomendada quando a performance é um requisito fundamental, já que normalmente sites para mobile são bem mais rapidos devido a sua implementação ser mais específica (pouca responsividade) o que torna seus arquivos menores. Pesquisa mostram que sites mobile chegam a ser carregados 60% mais rapido que sites responsivos <span>[<a href="#reference1" title="link para referencia">Ref. 1</a>]</span>. No site que criamos não há essa necessidade devido ao site ser pequeno e o ganho de performance seria ínfimo comparado ao esforço de desenvolvimento.</p>
+            </li>
+            <li>
+              <p>No caso de um CSS específico para impressão (print), como ele deve ser inserido?</p>
+              <p>Resposta: Pode-se criar uma folha de estilos separada e incorporá-la ao HTML adicionando a propriedade <em>media="print"</em> na incorporação. Outra opção é, utilizando folhas de estilos já existentes, adicionar uma media query para o media type <em>print</em>. Ex: <code>@media print {...}</code></p>
+            </li>
+          </ol>
+        </section>
+        <section>    
+          <h1>Sobre multimídia Web</h1>
+          
+          <ol>
+            <li>
+              <p>O elemento audio permite como elemento-filho o elemento source. Quais são os atributos que o source permite e qual conteúdo eles suportam? Quais os outros atributos do elemento audio e quanto devem ser utilizados?</p>
+              <p>Resposta: Atributos do elemento <em>source</em> <span>[<a href="#reference2" title="link para referencia">Ref. 2</a>]</span>. </p>
+              <table>
+                <tr>
+                  <th>Atributo</th>
+                  <th>Valor</th>
+                  <th>Descrição</th>
+                </tr>
+                <tr>
+                  <td>media</td>
+                  <td>media query</td>
+                  <td>Aceita qualquer media query que poderia ser definido no CSS</td>
+                </tr>
+                <tr>
+                  <td>size</td>
+                  <td></td>
+                  <td>Especifica o tamanho da imagem para diferentes layouts de pagina</td>
+                </tr>
+                <tr>
+                  <td>src</td>
+                  <td>URL</td>
+                  <td>Especifica a URL do arquivo de mídia. Esse atributo é obrigatório quando a tag source é utilizada nas tags video e audio.</td>
+                </tr>
+                <tr>
+                  <td>srcset</td>
+                  <td>URL</td>
+                  <td>Especifica a URL da imagem que será utilizada em diferentes situações. Esse atributo é obrigatório quando a tag source é utilizada nas tags video e audio.</td>
+                </tr>
+                <tr>
+                  <td>type</td>
+                  <td>MIME-type</td>
+                  <td>Especifica o MIME-type do recurso</td>
+                </tr>
+              </table>
+    
+              <p>Atributos do elemento audio</p> 
+    
+            </li>
+            <li>
+              <p>O elemento vídeo permite como elemento-filho o elemento source. Quais são os atributos que o source permite e qual conteúdo eles suportam? Quais os outros atributos do elemento vídeo e quando devem ser utilizados?</p>
+              <p>Resposta: Atributos do elemento <em>source</em> <span>[<a href="#reference2" title="link para referencia">Ref. 2</a>]</span></p>
+    
+              <table>
+                <tr>
+                  <th>Atributo</th>
+                  <th>Valor</th>
+                  <th>Descrição</th>
+                </tr>
+                <tr>
+                  <td>media</td>
+                  <td>media query</td>
+                  <td>Aceita qualquer media query que poderia ser definido no CSS</td>
+                </tr>
+                <tr>
+                  <td>size</td>
+                  <td></td>
+                  <td>Especifica o tamanho da imagem para diferentes layouts de pagina</td>
+                </tr>
+                <tr>
+                  <td>src</td>
+                  <td>URL</td>
+                  <td>Especifica a URL do arquivo de mídia. Esse atributo é obrigatório quando a tag source é utilizada nas tags video e audio.</td>
+                </tr>
+                <tr>
+                  <td>srcset</td>
+                  <td>URL</td>
+                  <td>Especifica a URL da imagem que será utilizada em diferentes situações. Esse atributo é obrigatório quando a tag source é utilizada nas tags video e audio.</td>
+                </tr>
+                <tr>
+                  <td>type</td>
+                  <td>MIME-type</td>
+                  <td>Especifica o MIME-type do recurso</td>
+                </tr>
+              </table>
+            </li>
+            <li>
+              <p>No caso do canvas, HTML5 nunca, em momento algum, fez qualquer animação. Isso porque o HTML5 é uma simples linguagem de marcação. Dessa forma, o que é necessário para criar animações com HTML5? O que são APIs do HTML5?</p>
+              <p>Resposta: O canvas do HTML5 é apenas uma API com a qual podemos interagir através de códigos javascript <span>[<a href="#reference3">Ref. 3</a>]</span>. São instruções disponíveis nos navegadores que facilitam o acesso a funcionalidades complexas através da abstração de código.<span>[<a href="#reference4">Ref. 4</a>]</span></p>
+            </li>
+            <li>
+              <p>Como o CSS3 pode ser aplicado na aparência da multimídia HTML5. Demonstre com um exemplo.</p>
+              <p>Resposta: Podemos utilizar o CSS3 para ajustar as dimensões do player de video. Ex: <code>video {width: 100%; height: auto; }</code>
+              </p>
+            </li>
+          </ol>
+        </section>
+        
+        <section>    
+          <h1>Animações</h1>
+          <p>As únicas animações utilizadas foram através da propriedade <em>"transition"</em> que é suportada por todos os browsers desde 2010. No entanto utilizei as variáveis CSS  que são totalmente suportadas apenas após 2016. Também utilizei as propriedades <em>margin-inline</em>, <em>margin-block</em>, <em>padding-inline</em> e <em>padding-block</em> que são totalmente suportadas apenas a partir de 2020.</p>
+          <p>Utilizei por ultimo uma técnica que gera um efeito parallax, que dá a sensação de tridimensionalidade entre os elementos da página. No caso desse projeto, esse efeito foi utilizado apenas na pagina "assessment.html", aonde pode-se observar o background rolando em uma velocidade diferente dos demais elementos. No entanto não consegui fazer esse efeito ficar totalmente responsivo.</p>
+        </section>
+    
+        <section>
+          <h1>Referências</h1>
+          <ol>
+            <li id="reference1">
+              <p>CRAIG, William. A Comparison of Methods for Building Mobile-Optimized Websites. Disponível em: <a target="_blank" href="https://www.webfx.com/blog/web-design/methods-mobile-websites/">https://www.webfx.com/blog/web-design/methods-mobile-websites/</a>. Acesso em: 21 jun. 2022</p>
+            </li>
+            <li id="reference2">
+              <p>W3SCHOOLS. HTML <em>source</em> tag. Disponível em: <a target="_blank" href="https://www.w3schools.com/tags/tag_source.asp">https://www.w3schools.com/tags/tag_source.asp</a>. Acesso em: 21 jun. 2022</p>
+            </li>
+            <li id="reference3">
+              <p>MDN WEB DOCS. Canvas API<a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Canvas_API">https://developer.mozilla.org/pt-BR/docs/Web/API/Canvas_API</a>. Acesso em: 21 jun. 2022</p>
+            </li>
+            <li id="reference4">
+              <p>MDN WEB DOCS. Introdução às Web APIs. Disponível em: <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Client-side_web_APIs/Introduction">https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Client-side_web_APIs/Introduction</a>. Acesso em: 21 jun. 2022</p>
+            </li>
+          </ol>
+        </section>
+      </main>
+    </div>
+  </div>
 
-      <h1>Animações</h1>
-      <p>As únicas animações utilizadas foram através da propriedade <em>"transition"</em> que é suportada por todos os browsers desde 2010. No entanto utilizei as variáveis CSS  que são totalmente suportadas apenas após 2016. Também utilizei as propriedades <em>margin-inline</em>, <em>margin-block</em>, <em>padding-inline</em> e <em>padding-block</em> que são totalmente suportadas apenas a partir de 2020.</p>
-    </section>
-
-    <section>
-      <h1>Referências</h1>
-      <ol>
-        <li id="reference1">
-          <p>CRAIG, William. A Comparison of Methods for Building Mobile-Optimized Websites. Disponível em: <a target="_blank" href="https://www.webfx.com/blog/web-design/methods-mobile-websites/">https://www.webfx.com/blog/web-design/methods-mobile-websites/</a>. Acesso em: 21 jun. 2022</p>
-        </li>
-        <li id="reference2">
-          <p>W3SCHOOLS. HTML <em>source</em> tag. Disponível em: <a target="_blank" href="https://www.w3schools.com/tags/tag_source.asp">https://www.w3schools.com/tags/tag_source.asp</a>. Acesso em: 21 jun. 2022</p>
-        </li>
-      </ol>
-    </section>
-  </main>
 </body>
 </html>
