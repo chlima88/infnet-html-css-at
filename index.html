@@ -15,366 +15,367 @@
   <title>Dados Abertos</title>
 </head>
 <body>
-  <header>
-    <div class="header-box">
-      <div class="header-box__logo">
-        <div class="header-box__img-container">
-          <img class="header-box__logo-img" src="./imagens/logo.png" alt="Logotipo Dados Abertos">
+  <div id="container">
+    <header>
+      <div class="header-box">
+        <div class="header-box__logo">
+          <div class="header-box__img-container">
+            <img class="header-box__logo-img" src="./imagens/logo.png" alt="Logotipo Dados Abertos">
+          </div>
+          <p class="header-box__logo-text">Dados Abertos</p>
         </div>
-        <p class="header-box__logo-text">Dados Abertos</p>
-      </div>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#inicio" title="Inicio">Início</a></li>
-          <li class="menu__item"><a class="menu__link" href="#deputados" title="Lista de Deputados">Deputados</a></li>
-          <li class="menu__item"><a class="menu__link" href="#partidos" title="Lista de Partidos">Partidos</a></li>
-          <li class="menu__item"><a class="menu__link" href="#bancadas" title="Tabela de Bancadas">Bancadas</a></li>
-          <li class="menu__item"><a class="menu__link" href="#noticias" title="Ultimas Noticias">Notícias</a></li>
-          <li class="menu__item"><a class="menu__link" href="#plenaria" title="Plenária ao Vivo">Plenária</a></li>
-          <li class="menu__item"><a class="menu__link" href="#contato" title="Contato">Contato</a></li>
-          <li class="menu__item"><a class="menu__link" href="./assessment.html" title="Assessment">Assessment</a></li>
-        </ul>
-      </nav>
-      <div>
-        <div class="header-box__hamburger">
-          <i class="fa-solid fa-bars"></i>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#inicio" title="Inicio">Início</a></li>
+            <li class="menu__item"><a class="menu__link" href="#deputados" title="Lista de Deputados">Deputados</a></li>
+            <li class="menu__item"><a class="menu__link" href="#partidos" title="Lista de Partidos">Partidos</a></li>
+            <li class="menu__item"><a class="menu__link" href="#bancadas" title="Tabela de Bancadas">Bancadas</a></li>
+            <li class="menu__item"><a class="menu__link" href="#noticias" title="Ultimas Noticias">Notícias</a></li>
+            <li class="menu__item"><a class="menu__link" href="#plenaria" title="Plenária ao Vivo">Plenária</a></li>
+            <li class="menu__item"><a class="menu__link" href="#contato" title="Contato">Contato</a></li>
+            <li class="menu__item"><a class="menu__link" href="./assessment.html" title="Assessment">Assessment</a></li>
+          </ul>
+        </nav>
+        <div>
+          <div class="header-box__hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="header-box-box__close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>  
         </div>
-        <div class="header-box-box__close">
-          <i class="fa-solid fa-xmark"></i>
-        </div>  
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section id="inicio">
-      <div>
-        <h1>QUEM SÃO OS DEPUTADOS</h1>
-        <h2>Conheça os deputados, seus partidos e legislaturas</h2>
-      </div>
-      <button>DEPUTADOS</button>
-    </section>
-    <section id="deputados">
-      <h1 class="section__title">DEPUTADOS</h1>
-      <div class="search-box">
-        <form class="search-box__form">
-          <p class="search-box__title">Consule aqui os deputados da legislatura atual</p>
-          <input class="search-box__input" type="text" placeholder="Nome do deputado">
-          <button class="search-box__button" type="submit">BUSCAR</button>
-        </form>
-      </div>
-      <div class="cardgrid" id="grid1">
-        <div class="card">
-          <div class="card__img-container">
-            <img class="card__image" src="./imagens/dep1.jpg" alt="imagem do deputado">
-          </div>
-          <div class="card__text-container">
-            <p class="card__name">Fulano de Tal</p>
-            <p class="card__party">REDE-MG</p>
-            <ul class="card__list">
-              <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
-              <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
-            </ul>
-          </div>
+    <main>
+      <section id="inicio">
+        <div>
+          <h1>QUEM SÃO OS DEPUTADOS</h1>
+          <h2>Conheça os deputados, seus partidos e legislaturas</h2>
         </div>
-        <div class="card">
-          <div class="card__img-container">
-            <img class="card__image" src="./imagens/dep2.jpg" alt="imagem do deputado">
-          </div>
-          <div class="card__text-container">
-            <p class="card__name">Fulano de Tal</p>
-            <p class="card__party">REDE-MG</p>
-            <ul class="card__list">
-              <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
-              <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
-            </ul>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__img-container">
-            <img class="card__image" src="./imagens/dep3.jpg" alt="imagem do deputado">
-          </div>
-          <div class="card__text-container">
-            <p class="card__name">Fulano de Tal</p>
-            <p class="card__party">REDE-MG</p>
-            <ul class="card__list">
-              <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
-              <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
-            </ul>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__img-container">
-            <img class="card__image" src="./imagens/dep4.jpg" alt="imagem do deputado">
-          </div>
-          <div class="card__text-container">
-            <p class="card__name">Fulano de Tal</p>
-            <p class="card__party">REDE-MG</p>
-            <ul class="card__list">
-              <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
-              <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
-            </ul>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__img-container">
-            <img class="card__image" src="./imagens/dep5.jpg" alt="imagem do deputado">
-          </div>
-          <div class="card__text-container">
-            <p class="card__name">Fulano de Tal</p>
-            <p class="card__party">REDE-MG</p>
-            <ul class="card__list">
-              <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
-              <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
-            </ul>
-          </div>
-        </div>
-        <div class="card">
-        <div class="card__img-container">
-            <img class="card__image" src="./imagens/dep6.jpg" alt="imagem do deputado">
-          </div>
-          <div class="card__text-container">
-            <p class="card__name">Fulano de Tal</p>
-            <p class="card__party">REDE-MG</p>
-            <ul class="card__list">
-              <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
-              <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
-            </ul>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__img-container">
-            <img class="card__image" src="./imagens/dep7.jpg" alt="imagem do deputado">
-          </div>
-          <div class="card__text-container">
-            <p class="card__name">Fulano de Tal</p>
-            <p class="card__party">REDE-MG</p>
-            <ul class="card__list">
-              <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
-              <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
-            </ul>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__img-container">
-            <img class="card__image" src="./imagens/dep8.jpg" alt="imagem do deputado">
-          </div>
-          <div class="card__text-container">
-            <p class="card__name">Fulano de Tal</p>
-            <p class="card__party">REDE-MG</p>
-            <ul class="card__list">
-              <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
-              <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="partidos">
-      <h1 class="section__title">PARTIDOS</h1>
-      <div class="search-box">
-        <form class="search-box__form">
-          <p class="search-box__title">Consulte aqui os partidos existentes</p>
-          <input class="search-box__input" type="text" placeholder="Nome do partido">
-          <button class="search-box__button" type="submit">BUSCAR</button>
-        </form>
-      </div>
-      <div class="cardgrid" id="grid2">
-        <div class="party-card">
-          <div class="party-card__img-container">
-            <img class="party-card__logo" src="./imagens/pl.png" alt="Logo do partido">
-          </div>
-          <p class="party-card__name">Partido XPTO</p>
-          <div class="party-card__social">
-            <a  class="party-card__icon-link" href="https://www.facebook.com" target="_blank" title="link para perfil do facebook">
-              <i class="fa-brands fa-lg fa-facebook-square" ></i>
-            </a>
-            <a  class="party-card__icon-link" href="https://www.twitter.com" target="_blank" title="link para perfil do twitter">
-              <i class="fa-brands fa-lg fa-twitter-square" ></i>
-            </a>
-            <a  class="party-card__icon-link" href="https://www.instagram.com" target="_blank" title="link para perfil do instagram">
-              <i class="fa-brands fa-lg fa-instagram-square" ></i>
-            </a>
-          </div>
-        </div>
-        <div class="party-card">
-          <div class="party-card__img-container">
-            <img class="party-card__logo" src="./imagens/verde.png" alt="Logo do partido">
-          </div>
-          <p class="party-card__name">Partido XPTO</p>
-          <div class="party-card__social">
-            <a  class="party-card__icon-link" href="https://www.facebook.com" target="_blank" title="link para perfil do facebook">
-              <i class="fa-brands fa-lg fa-facebook-square" ></i>
-            </a>
-            <a  class="party-card__icon-link" href="https://www.twitter.com" target="_blank" title="link para perfil do twitter">
-              <i class="fa-brands fa-lg fa-twitter-square" ></i>
-            </a>
-            <a  class="party-card__icon-link" href="https://www.instagram.com" target="_blank" title="link para perfil do instagram">
-              <i class="fa-brands fa-lg fa-instagram-square" ></i>
-            </a>
-          </div>
-        </div>
-        <div class="party-card">
-          <div class="party-card__img-container">
-            <img class="party-card__logo" src="./imagens/pt.png" alt="Logo do partido">
-          </div>
-          <p class="party-card__name">Partido XPTO</p>
-          <div class="party-card__social">
-            <a  class="party-card__icon-link" href="https://www.facebook.com" target="_blank" title="link para perfil do facebook">
-              <i class="fa-brands fa-lg fa-facebook-square" ></i>
-            </a>
-            <a  class="party-card__icon-link" href="https://www.twitter.com" target="_blank" title="link para perfil do twitter">
-              <i class="fa-brands fa-lg fa-twitter-square" ></i>
-            </a>
-            <a  class="party-card__icon-link" href="https://www.instagram.com" target="_blank" title="link para perfil do instagram">
-              <i class="fa-brands fa-lg fa-instagram-square" ></i>
-            </a>
-          </div>
-        </div>
-        <div class="party-card">
-          <div class="party-card__img-container">
-            <img class="party-card__logo" src="./imagens/psd.png" alt="Logo do partido">
-          </div>
-          <p class="party-card__name">Partido XPTO</p>
-          <div class="party-card__social">
-            <a  class="party-card__icon-link" href="https://www.facebook.com" target="_blank" title="link para perfil do facebook">
-              <i class="fa-brands fa-lg fa-facebook-square" ></i>
-            </a>
-            <a  class="party-card__icon-link" href="https://www.twitter.com" target="_blank" title="link para perfil do twitter">
-              <i class="fa-brands fa-lg fa-twitter-square" ></i>
-            </a>
-            <a  class="party-card__icon-link" href="https://www.instagram.com" target="_blank" title="link para perfil do instagram">
-              <i class="fa-brands fa-lg fa-instagram-square" ></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="bancadas">
-      <h1 class="section__title">BANCADAS</h1>
-      <h2 class="section__subtitle">Principais bancadas do congresso</h2>
-      <table class="bench-table">
-        <thead>
-          <tr>
-            <th scope="col">Partido/Bloco</th>
-            <th scope="col">Bancada</th>
-            <th scope="col">Líder/Representante</th>
-            <th scope="col">Nome do Partido/Bloco</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>PL</td>
-            <td>77</td>
-            <td>Altineu Cortes</td>
-            <td>Partido Liberal</td>
-          </tr>
-          <tr>
-            <td>PT</td>
-            <td>56</td>
-            <td>Reginaldo Lopes</td>
-            <td>Partido dos Trabalhadores</td>
-          </tr>
-          <tr>
-            <td>PP</td>
-            <td>55</td>
-            <td>André Fufuca</td>
-            <td>Progressistas</td>
-          </tr>
-          <tr>
-            <td>PSD</td>
-            <td>47</td>
-            <td>Antônio Brito</td>
-            <td>Partido Social Democrático</td>
-          </tr>
-          <tr>
-            <td>União</td>
-            <td>55</td>
-            <td>Elmar Nascimento</td>
-            <td>União Brasil</td>
-          </tr>
-          <tr>
-            <td>Republicanos</td>
-            <td>43</td>
-            <td>Vinícius Carvalho</td>
-            <td>Republicanos</td>
-          </tr>
-          <tr>
-            <td>MDB</td>
-            <td>37</td>
-            <td>Isnaldo Bulhões Jr.</td>
-            <td>Movimento Democrático Brasileito</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th scope="row">Total</th>
-            <th colspan="3">370</th>
-          </tr>
-        </tfoot>
-      </table>
-      <a href="#">Acesse a lista completa de bancadas</a>
-    </section>
-    <section id="noticias">
-      <h1 class="section__title">NOTÍCIAS</h1>
-      <div class="news">
-        <div class="news__img-container">
-          <img class="news__image" src="./imagens/combustivel.jpg" alt="carro sendo abastecido" />
-        </div>
-        <div class="news__text-container">
-          <h1 class="news__header">Câmara discute mudanças em política de preçoes da Petrobrás</h1>
-          <p class="news__text">A Câmara dos Deputados analisa 26 projetos que podem mudar as regras de composição de preços de combustiveis praticados pela Petrobrás. Entenda como funciona a política de preços da empresa.</p>
-          <p class="news__footer">Fonte: Agência Camara de Notícias</p>
-          <button class="news__button">ACESSE MAIS NOTÍCIAS</button> 
-        </div>
-      </div>
-    </section>
-    <section id="plenaria">
-      <h1 class="section__title">PLENÁRIA: ASSISTA AS SESSÕES</h1>
-      <div class="player">
-        <iframe 
-          src="https://www.youtube.com/embed/psueSk4SVsA"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-      </div>
-      <p>😈 <strong>AGORA:</strong> Sessão para a votação de propostas legislativas</p>
-    </section>
-    <section id="contato">
-      <h1 class="section__title">CONTATO</h1>
-      <div class="contact">
-        <div class="contact__form-container">
-          <form class="contact__form">
-            <input class="contact__input" type="text" placeholder="Nome" required>
-            <input class="contact__input" type="email" placeholder="E-mail" required>
-            <textarea class="contact__text-area" placeholder="Mensagem" required></textarea>
-            <button class="contact__button" type="submit">ENVIAR</button>
+        <button>DEPUTADOS</button>
+      </section>
+      <section id="deputados">
+        <h1 class="section__title">DEPUTADOS</h1>
+        <div class="search-box">
+          <form class="search-box__form">
+            <p class="search-box__title">Consule aqui os deputados da legislatura atual</p>
+            <input class="search-box__input" type="text" placeholder="Nome do deputado">
+            <button class="search-box__button" type="submit">BUSCAR</button>
           </form>
         </div>
-        <div class="contact__text-container">
-          <div class="contact__text1">
-            <h2>Fale Conosco</h2>
-            <p>Deixe-nos suas críticas, elogios e sugestões</p>
+        <div class="cardgrid" id="grid1">
+          <div class="card">
+            <div class="card__img-container">
+              <img class="card__image" src="./imagens/dep1.jpg" alt="imagem do deputado">
+            </div>
+            <div class="card__text-container">
+              <p class="card__name">Fulano de Tal</p>
+              <p class="card__party">REDE-MG</p>
+              <ul class="card__list">
+                <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
+                <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
+              </ul>
+            </div>
           </div>
-          <div class="contact__text2">  
-            <h2>Destaques</h2>
-            <ul class="contact__list">
-              <li><a href="#">Perguntas Frequentes</a></li>
-              <li><a href="#">Acesso à informação</a></li>
-              <li><a href="#">Transparência na Câmara</a></li>
-              <li><a href="#">Carta de serviços ao cidadão</a></li>
-            </ul>
+          <div class="card">
+            <div class="card__img-container">
+              <img class="card__image" src="./imagens/dep2.jpg" alt="imagem do deputado">
+            </div>
+            <div class="card__text-container">
+              <p class="card__name">Fulano de Tal</p>
+              <p class="card__party">REDE-MG</p>
+              <ul class="card__list">
+                <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
+                <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img-container">
+              <img class="card__image" src="./imagens/dep3.jpg" alt="imagem do deputado">
+            </div>
+            <div class="card__text-container">
+              <p class="card__name">Fulano de Tal</p>
+              <p class="card__party">REDE-MG</p>
+              <ul class="card__list">
+                <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
+                <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img-container">
+              <img class="card__image" src="./imagens/dep4.jpg" alt="imagem do deputado">
+            </div>
+            <div class="card__text-container">
+              <p class="card__name">Fulano de Tal</p>
+              <p class="card__party">REDE-MG</p>
+              <ul class="card__list">
+                <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
+                <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img-container">
+              <img class="card__image" src="./imagens/dep5.jpg" alt="imagem do deputado">
+            </div>
+            <div class="card__text-container">
+              <p class="card__name">Fulano de Tal</p>
+              <p class="card__party">REDE-MG</p>
+              <ul class="card__list">
+                <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
+                <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+          <div class="card__img-container">
+              <img class="card__image" src="./imagens/dep6.jpg" alt="imagem do deputado">
+            </div>
+            <div class="card__text-container">
+              <p class="card__name">Fulano de Tal</p>
+              <p class="card__party">REDE-MG</p>
+              <ul class="card__list">
+                <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
+                <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img-container">
+              <img class="card__image" src="./imagens/dep7.jpg" alt="imagem do deputado">
+            </div>
+            <div class="card__text-container">
+              <p class="card__name">Fulano de Tal</p>
+              <p class="card__party">REDE-MG</p>
+              <ul class="card__list">
+                <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
+                <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img-container">
+              <img class="card__image" src="./imagens/dep8.jpg" alt="imagem do deputado">
+            </div>
+            <div class="card__text-container">
+              <p class="card__name">Fulano de Tal</p>
+              <p class="card__party">REDE-MG</p>
+              <ul class="card__list">
+                <li class="card__list-item">Legislaturas em que exerceu mandato: <strong>56</strong></li>
+                <li class="card__list-item">Partidos pelos quais já foi deputado: <strong>REDE, PL, PT</strong></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+      <section id="partidos">
+        <h1 class="section__title">PARTIDOS</h1>
+        <div class="search-box">
+          <form class="search-box__form">
+            <p class="search-box__title">Consulte aqui os partidos existentes</p>
+            <input class="search-box__input" type="text" placeholder="Nome do partido">
+            <button class="search-box__button" type="submit">BUSCAR</button>
+          </form>
+        </div>
+        <div class="cardgrid" id="grid2">
+          <div class="party-card">
+            <div class="party-card__img-container">
+              <img class="party-card__logo" src="./imagens/pl.png" alt="Logo do partido">
+            </div>
+            <p class="party-card__name">Partido XPTO</p>
+            <div class="party-card__social">
+              <a  class="party-card__icon-link" href="https://www.facebook.com" target="_blank" title="link para perfil do facebook">
+                <i class="fa-brands fa-lg fa-facebook-square" ></i>
+              </a>
+              <a  class="party-card__icon-link" href="https://www.twitter.com" target="_blank" title="link para perfil do twitter">
+                <i class="fa-brands fa-lg fa-twitter-square" ></i>
+              </a>
+              <a  class="party-card__icon-link" href="https://www.instagram.com" target="_blank" title="link para perfil do instagram">
+                <i class="fa-brands fa-lg fa-instagram-square" ></i>
+              </a>
+            </div>
+          </div>
+          <div class="party-card">
+            <div class="party-card__img-container">
+              <img class="party-card__logo" src="./imagens/verde.png" alt="Logo do partido">
+            </div>
+            <p class="party-card__name">Partido XPTO</p>
+            <div class="party-card__social">
+              <a  class="party-card__icon-link" href="https://www.facebook.com" target="_blank" title="link para perfil do facebook">
+                <i class="fa-brands fa-lg fa-facebook-square" ></i>
+              </a>
+              <a  class="party-card__icon-link" href="https://www.twitter.com" target="_blank" title="link para perfil do twitter">
+                <i class="fa-brands fa-lg fa-twitter-square" ></i>
+              </a>
+              <a  class="party-card__icon-link" href="https://www.instagram.com" target="_blank" title="link para perfil do instagram">
+                <i class="fa-brands fa-lg fa-instagram-square" ></i>
+              </a>
+            </div>
+          </div>
+          <div class="party-card">
+            <div class="party-card__img-container">
+              <img class="party-card__logo" src="./imagens/pt.png" alt="Logo do partido">
+            </div>
+            <p class="party-card__name">Partido XPTO</p>
+            <div class="party-card__social">
+              <a  class="party-card__icon-link" href="https://www.facebook.com" target="_blank" title="link para perfil do facebook">
+                <i class="fa-brands fa-lg fa-facebook-square" ></i>
+              </a>
+              <a  class="party-card__icon-link" href="https://www.twitter.com" target="_blank" title="link para perfil do twitter">
+                <i class="fa-brands fa-lg fa-twitter-square" ></i>
+              </a>
+              <a  class="party-card__icon-link" href="https://www.instagram.com" target="_blank" title="link para perfil do instagram">
+                <i class="fa-brands fa-lg fa-instagram-square" ></i>
+              </a>
+            </div>
+          </div>
+          <div class="party-card">
+            <div class="party-card__img-container">
+              <img class="party-card__logo" src="./imagens/psd.png" alt="Logo do partido">
+            </div>
+            <p class="party-card__name">Partido XPTO</p>
+            <div class="party-card__social">
+              <a  class="party-card__icon-link" href="https://www.facebook.com" target="_blank" title="link para perfil do facebook">
+                <i class="fa-brands fa-lg fa-facebook-square" ></i>
+              </a>
+              <a  class="party-card__icon-link" href="https://www.twitter.com" target="_blank" title="link para perfil do twitter">
+                <i class="fa-brands fa-lg fa-twitter-square" ></i>
+              </a>
+              <a  class="party-card__icon-link" href="https://www.instagram.com" target="_blank" title="link para perfil do instagram">
+                <i class="fa-brands fa-lg fa-instagram-square" ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="bancadas">
+        <h1 class="section__title">BANCADAS</h1>
+        <h2 class="section__subtitle">Principais bancadas do congresso</h2>
+        <table class="bench-table">
+          <thead>
+            <tr>
+              <th scope="col">Partido/Bloco</th>
+              <th scope="col">Bancada</th>
+              <th scope="col">Líder/Representante</th>
+              <th scope="col">Nome do Partido/Bloco</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PL</td>
+              <td>77</td>
+              <td>Altineu Cortes</td>
+              <td>Partido Liberal</td>
+            </tr>
+            <tr>
+              <td>PT</td>
+              <td>56</td>
+              <td>Reginaldo Lopes</td>
+              <td>Partido dos Trabalhadores</td>
+            </tr>
+            <tr>
+              <td>PP</td>
+              <td>55</td>
+              <td>André Fufuca</td>
+              <td>Progressistas</td>
+            </tr>
+            <tr>
+              <td>PSD</td>
+              <td>47</td>
+              <td>Antônio Brito</td>
+              <td>Partido Social Democrático</td>
+            </tr>
+            <tr>
+              <td>União</td>
+              <td>55</td>
+              <td>Elmar Nascimento</td>
+              <td>União Brasil</td>
+            </tr>
+            <tr>
+              <td>Republicanos</td>
+              <td>43</td>
+              <td>Vinícius Carvalho</td>
+              <td>Republicanos</td>
+            </tr>
+            <tr>
+              <td>MDB</td>
+              <td>37</td>
+              <td>Isnaldo Bulhões Jr.</td>
+              <td>Movimento Democrático Brasileito</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row">Total</th>
+              <th colspan="3">370</th>
+            </tr>
+          </tfoot>
+        </table>
+        <a href="#">Acesse a lista completa de bancadas</a>
+      </section>
+      <section id="noticias">
+        <h1 class="section__title">NOTÍCIAS</h1>
+        <div class="news">
+          <div class="news__img-container">
+            <img class="news__image" src="./imagens/combustivel.jpg" alt="carro sendo abastecido" />
+          </div>
+          <div class="news__text-container">
+            <h1 class="news__header">Câmara discute mudanças em política de preçoes da Petrobrás</h1>
+            <p class="news__text">A Câmara dos Deputados analisa 26 projetos que podem mudar as regras de composição de preços de combustiveis praticados pela Petrobrás. Entenda como funciona a política de preços da empresa.</p>
+            <p class="news__footer">Fonte: Agência Camara de Notícias</p>
+            <button class="news__button">ACESSE MAIS NOTÍCIAS</button> 
+          </div>
+        </div>
+      </section>
+      <section id="plenaria">
+        <h1 class="section__title">PLENÁRIA: ASSISTA AS SESSÕES</h1>
+        <div class="player">
+          <iframe 
+            src="https://www.youtube.com/embed/psueSk4SVsA"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p>😈 <strong>AGORA:</strong> Sessão para a votação de propostas legislativas</p>
+      </section>
+      <section id="contato">
+        <h1 class="section__title">CONTATO</h1>
+        <div class="contact">
+          <div class="contact__form-container">
+            <form class="contact__form">
+              <input class="contact__input" type="text" placeholder="Nome" required>
+              <input class="contact__input" type="email" placeholder="E-mail" required>
+              <textarea class="contact__text-area" placeholder="Mensagem" required></textarea>
+              <button class="contact__button" type="submit">ENVIAR</button>
+            </form>
+          </div>
+          <div class="contact__text-container">
+            <div class="contact__text1">
+              <h2>Fale Conosco</h2>
+              <p>Deixe-nos suas críticas, elogios e sugestões</p>
+            </div>
+            <div class="contact__text2">  
+              <h2>Destaques</h2>
+              <ul class="contact__list">
+                <li><a href="#">Perguntas Frequentes</a></li>
+                <li><a href="#">Acesso à informação</a></li>
+                <li><a href="#">Transparência na Câmara</a></li>
+                <li><a href="#">Carta de serviços ao cidadão</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <footer >
-      <p>© Instituto Infnet - Assessment Interfaces com HTML e CSS</p>
-      <a class="footer__gotop-link" href="#inicio" title="Voltar ao topo"><i class="fa-solid fa-circle-chevron-up"></i></a>
-  </footer>
-
+    <footer >
+        <p>© Instituto Infnet - Assessment Interfaces com HTML e CSS</p>
+        <a class="footer__gotop-link" href="#inicio" title="Voltar ao topo"><i class="fa-solid fa-circle-chevron-up"></i></a>
+    </footer>
+  </div>
 </body>
 <script src="script.js" ></script>
 </html>
