@@ -69,6 +69,7 @@ td {
 }
 
 table {
+  margin-inline: auto;
   font-size: 0.875em;
   text-align: center;
 }
@@ -134,9 +135,9 @@ code{
   transform: translateZ(-1px) scale(2); 
   background-image: url(../imagens/kitkat.jpg);
   background-size: cover;
-  height: 270vh;
+  height: 330vh;
   width: 100vw;
-  top: 20rem;
+  top: 30rem;
   left: 0;
 }
 
